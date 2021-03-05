@@ -465,6 +465,10 @@
     <property role="TrG5h" value="Kino" />
     <node concept="3_Gd56" id="1lnGlmPu61L" role="3_Gd4Z">
       <property role="TrG5h" value="Vorfuehrung" />
+      <node concept="2_wlaR" id="6Q7cxch8Pkq" role="2_wlle">
+        <property role="3_FBD6" value="vorfuehrungsNummer" />
+        <ref role="3_FBDr" node="5H4ykBYMXjV" resolve="Integer" />
+      </node>
       <node concept="2_wlaR" id="1lnGlmPu61N" role="2_wlle">
         <property role="3_FBD6" value="preisParkett" />
         <ref role="3_FBDr" node="5H4ykBYMXjV" resolve="Integer" />
@@ -536,17 +540,6 @@
         <ref role="3_FBDr" node="1lnGlmPu62n" resolve="Resevierung" />
       </node>
     </node>
-    <node concept="3_FBDc" id="1lnGlmPu6kF" role="3_Gd4Z">
-      <property role="TrG5h" value="reservierungSitze" />
-      <node concept="3_FwNw" id="1lnGlmPu6lp" role="3_Fx_Q">
-        <ref role="3_FwNB" node="1lnGlmPu62n" resolve="Resevierung" />
-      </node>
-      <node concept="2zC27e" id="1lnGlmPu6ls" role="3_Fx_f">
-        <property role="3_FBD6" value="sitze" />
-        <property role="2zC27X" value="5H4ykBYL_dN/List" />
-        <ref role="3_FBDr" node="1lnGlmPu64g" resolve="Sitz" />
-      </node>
-    </node>
     <node concept="3_Gd56" id="1lnGlmPu62n" role="3_Gd4Z">
       <property role="TrG5h" value="Resevierung" />
       <node concept="2_wlaR" id="3LaWsg$N69X" role="2_wlle">
@@ -556,6 +549,10 @@
       <node concept="2_wlaR" id="3LaWsg$N69Z" role="2_wlle">
         <property role="3_FBD6" value="anzahlPlaetze" />
         <ref role="3_FBDr" node="5H4ykBYMXjV" resolve="Integer" />
+      </node>
+      <node concept="2_wlaR" id="6Q7cxch8Pja" role="2_wlle">
+        <property role="3_FBD6" value="istBereitsEingeloest" />
+        <ref role="3_FBDr" node="5H4ykBYMXkd" resolve="Boolean" />
       </node>
     </node>
     <node concept="3_Gd56" id="1lnGlmPu69D" role="3_Gd4Z">
@@ -609,6 +606,16 @@
         <property role="3_FBD6" value="sitze" />
         <property role="2zC27X" value="5H4ykBYL_dN/List" />
         <ref role="3_FBDr" node="1lnGlmPu64g" resolve="Sitz" />
+      </node>
+    </node>
+    <node concept="3_FBDc" id="6Q7cxch8PhL" role="3_Gd4Z">
+      <property role="TrG5h" value="reiheKategorie" />
+      <node concept="3_FwNw" id="6Q7cxch8PiM" role="3_Fx_Q">
+        <ref role="3_FwNB" node="1lnGlmPu64L" resolve="Reihe" />
+      </node>
+      <node concept="2zC27e" id="6Q7cxch8PiP" role="3_Fx_f">
+        <property role="3_FBD6" value="kategorie" />
+        <ref role="3_FBDr" node="1lnGlmPu65o" resolve="Kategorie" />
       </node>
     </node>
     <node concept="3_Gd56" id="1lnGlmPu64L" role="3_Gd4Z">
@@ -707,13 +714,27 @@
       <property role="3_Gd5o" value="holeSaal" />
       <property role="3_Gd5t" value="holt den aktuellen Aufbau des Saals" />
       <node concept="3_Gf45" id="1$cWEBVMVl9" role="3_Gf4o">
-        <property role="TrG5h" value="saalId" />
+        <property role="TrG5h" value="saalNummer" />
         <node concept="BxOjD" id="1$cWEBVMVld" role="BBx2O">
           <ref role="BxOjI" node="5H4ykBYMXjV" resolve="Integer" />
         </node>
       </node>
       <node concept="BxOjD" id="1$cWEBVMVlg" role="BBx3f">
         <ref role="BxOjI" node="1lnGlmPu69D" resolve="Saal" />
+      </node>
+    </node>
+    <node concept="3_Gd5r" id="6Q7cxch8Pk7" role="2_wlaX">
+      <property role="3_Gd5q" value="holeVorfuehrung" />
+      <property role="3_Gd5o" value="holeVorfuherung" />
+      <property role="3_Gd5t" value="holt die Vorfuehrung" />
+      <node concept="3_Gf45" id="6Q7cxch8Pkh" role="3_Gf4o">
+        <property role="TrG5h" value="vorfuehrungNummer" />
+        <node concept="BxOjD" id="6Q7cxch8Pkl" role="BBx2O">
+          <ref role="BxOjI" node="5H4ykBYMXjV" resolve="Integer" />
+        </node>
+      </node>
+      <node concept="BxOjD" id="6Q7cxch8Pko" role="BBx3f">
+        <ref role="BxOjI" node="1lnGlmPu61L" resolve="Vorfuehrung" />
       </node>
     </node>
   </node>
