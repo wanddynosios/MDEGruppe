@@ -702,5 +702,20 @@
         <ref role="BxOjI" node="5H4ykBYMXjV" resolve="Integer" />
       </node>
     </node>
+    <node concept="3_Gd5r" id="1$cWEBVMVl3" role="2_wlaX">
+      <property role="3_Gd5q" value="holeSaal" />
+      <property role="3_Gd5o" value="holeSaal" />
+      <property role="3_Gd5t" value="holt den aktuellen Aufbau des Saals" />
+      <node concept="3_Gf45" id="1$cWEBVMVl9" role="3_Gf4o">
+        <property role="TrG5h" value="saalId" />
+        <node concept="BxOjD" id="1$cWEBVMVld" role="BBx2O">
+          <ref role="BxOjI" node="5H4ykBYMXjV" resolve="Integer" />
+        </node>
+      </node>
+      <node concept="BxOjD" id="1$cWEBVMVlg" role="BBx3f">
+        <ref role="BxOjI" node="1lnGlmPu69D" resolve="Saal" />
+      </node>
+    </node>
   </node>
 </model>
+

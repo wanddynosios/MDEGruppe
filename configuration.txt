@@ -1,5 +1,5 @@
 protocolFileDirectory = C:\Users\admin\MPSProjects\logs
-javaIDEProjectDirectory = C:/Users/admin/IdeaProjects/MDEGen
+javaIDEProjectDirectory = C:/Users/admin/IdeaProjects/kino/MDEGen
 databaseURL = jdbc:mysql://localhost:3306
 databaseUser = root
 databasePassword = 
