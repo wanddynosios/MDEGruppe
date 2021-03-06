@@ -290,7 +290,7 @@
       </node>
     </node>
     <node concept="3_Gd56" id="5Q6229KztdC" role="3_Gd4Z">
-      <property role="TrG5h" value="File" />
+      <property role="TrG5h" value="Film" />
     </node>
     <node concept="3_FBDc" id="5Q6229KztdO" role="3_Gd4Z">
       <property role="TrG5h" value="Dir_Has_Elements" />
@@ -305,7 +305,7 @@
     </node>
     <node concept="3_F_VF" id="5Q6229KA4zb" role="3_F_jM">
       <ref role="3_F_VE" node="5Q6229Kztdk" resolve="Element" />
-      <ref role="3_F_VC" node="5Q6229KztdC" resolve="File" />
+      <ref role="3_F_VC" node="5Q6229KztdC" resolve="Film" />
     </node>
     <node concept="3_F_VF" id="5Q6229KA4zd" role="3_F_jM">
       <ref role="3_F_VE" node="5Q6229Kztdk" resolve="Element" />
@@ -565,6 +565,30 @@
         <property role="3_FBD6" value="SaalNummer" />
         <ref role="3_FBDr" node="5H4ykBYMXjV" resolve="Integer" />
       </node>
+      <node concept="3_Gd5r" id="6EZS7jlUYV8" role="3_Gd4E">
+        <property role="3_Gd5q" value="getAnzahlPlaetzeParkett" />
+        <property role="3_Gd5o" value="getAnzahlPlaetzeParkett" />
+        <property role="3_Gd5t" value="holt anzahl plaetze Parkett" />
+        <node concept="BxOjD" id="6EZS7jlUYVa" role="BBx3f">
+          <ref role="BxOjI" node="5H4ykBYMXjV" resolve="Integer" />
+        </node>
+      </node>
+      <node concept="3_Gd5r" id="6EZS7jlUYVc" role="3_Gd4E">
+        <property role="3_Gd5q" value="getAnzahlPlaetzeMitte" />
+        <property role="3_Gd5o" value="getAnzahlPlaetzeMitte" />
+        <property role="3_Gd5t" value="holt anzahl plaetze Mitte" />
+        <node concept="BxOjD" id="6EZS7jlUYVg" role="BBx3f">
+          <ref role="BxOjI" node="5H4ykBYMXjV" resolve="Integer" />
+        </node>
+      </node>
+      <node concept="3_Gd5r" id="6EZS7jlUYVi" role="3_Gd4E">
+        <property role="3_Gd5q" value="getAnzhalPlaetzeLoge" />
+        <property role="3_Gd5t" value="holt anzahl plaetze Loge" />
+        <property role="3_Gd5o" value="getAnzahlPlaetzeLoge" />
+        <node concept="BxOjD" id="6EZS7jlUYVo" role="BBx3f">
+          <ref role="BxOjI" node="5H4ykBYMXjV" resolve="Integer" />
+        </node>
+      </node>
     </node>
     <node concept="3_FBDc" id="1lnGlmPu6au" role="3_Gd4Z">
       <property role="TrG5h" value="vorfuehrungFilm" />
@@ -688,6 +712,14 @@
       <property role="TrG5h" value="NichtGenugPlaetzeException" />
       <property role="3_Gd4H" value="Es gibt nicht genug freie Plätze in der angeforderten Kategorie" />
     </node>
+    <node concept="3_Gd4C" id="6EZS7jlUYVq" role="3_G82M">
+      <property role="TrG5h" value="NoSuchElementException" />
+      <property role="3_Gd4H" value="Es gibt kein solches Element in der Datenbank" />
+    </node>
+    <node concept="3_Gd4C" id="6EZS7jlUYWd" role="3_G82M">
+      <property role="TrG5h" value="ElementAlreadyExistsException" />
+      <property role="3_Gd4H" value="Ein Element mit dem gleichen fachlichen Namen exisiert bereits" />
+    </node>
     <node concept="3_Gd56" id="3LaWsg$N68R" role="3_Gd4Z">
       <property role="TrG5h" value="BuchungsEinheit" />
       <node concept="2_wlaR" id="3LaWsg$N69B" role="2_wlle">
@@ -717,6 +749,7 @@
       <property role="3_Gd5q" value="holeSaal" />
       <property role="3_Gd5o" value="holeSaal" />
       <property role="3_Gd5t" value="holt den aktuellen Aufbau des Saals" />
+      <ref role="3NuQEv" node="6EZS7jlUYVq" resolve="NoSuchElementException" />
       <node concept="3_Gf45" id="1$cWEBVMVl9" role="3_Gf4o">
         <property role="TrG5h" value="saalNummer" />
         <node concept="BxOjD" id="1$cWEBVMVld" role="BBx2O">
@@ -731,6 +764,7 @@
       <property role="3_Gd5q" value="holeVorfuehrung" />
       <property role="3_Gd5o" value="holeVorfuherung" />
       <property role="3_Gd5t" value="holt die Vorfuehrung" />
+      <ref role="3NuQEv" node="6EZS7jlUYVq" resolve="NoSuchElementException" />
       <node concept="3_Gf45" id="6Q7cxch8Pkh" role="3_Gf4o">
         <property role="TrG5h" value="vorfuehrungNummer" />
         <node concept="BxOjD" id="6Q7cxch8Pkl" role="BBx2O">
@@ -750,6 +784,21 @@
         <node concept="BxOjD" id="6Q7cxch8PkO" role="BBx2O">
           <ref role="BxOjI" node="1lnGlmPu69D" resolve="Saal" />
         </node>
+      </node>
+    </node>
+    <node concept="3_Gd5r" id="6EZS7jlUYVK" role="2_wlaX">
+      <property role="3_Gd5q" value="holeFilm" />
+      <property role="3_Gd5o" value="holeFilm" />
+      <property role="3_Gd5t" value="Holt Film zum Namen" />
+      <ref role="3NuQEv" node="6EZS7jlUYVq" resolve="NoSuchElementException" />
+      <node concept="3_Gf45" id="6EZS7jlUYW4" role="3_Gf4o">
+        <property role="TrG5h" value="filmName" />
+        <node concept="BxOjD" id="6EZS7jlUYW8" role="BBx2O">
+          <ref role="BxOjI" node="5H4ykBYMXjQ" resolve="String" />
+        </node>
+      </node>
+      <node concept="BxOjD" id="6EZS7jlUYWb" role="BBx3f">
+        <ref role="BxOjI" node="5Q6229KztdC" resolve="Film" />
       </node>
     </node>
     <node concept="3_Gd5r" id="6Q7cxch8PkR" role="2_wlaX">
