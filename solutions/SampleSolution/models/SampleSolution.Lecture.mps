@@ -493,6 +493,10 @@
         <property role="3_FBD6" value="freiePlaetzeLoge" />
         <ref role="3_FBDr" node="5H4ykBYMXjV" resolve="Integer" />
       </node>
+      <node concept="2_wlaR" id="6Q7cxch8PEh" role="2_wlle">
+        <property role="3_FBD6" value="bereitsVorbei" />
+        <ref role="3_FBDr" node="5H4ykBYMXkd" resolve="Boolean" />
+      </node>
       <node concept="3_Gd5r" id="3LaWsg$N67T" role="3_Gd4E">
         <property role="3_Gd5q" value="buche" />
         <property role="3_Gd5o" value="buche" />
@@ -735,6 +739,28 @@
       </node>
       <node concept="BxOjD" id="6Q7cxch8Pko" role="BBx3f">
         <ref role="BxOjI" node="1lnGlmPu61L" resolve="Vorfuehrung" />
+      </node>
+    </node>
+    <node concept="3_Gd5r" id="6Q7cxch8Pky" role="2_wlaX">
+      <property role="3_Gd5q" value="erstelleSaal" />
+      <property role="3_Gd5o" value="erstelleSaal" />
+      <property role="3_Gd5t" value="erstellt einen Saal; komplett in Service implementiert" />
+      <node concept="3_Gf45" id="6Q7cxch8PkK" role="3_Gf4o">
+        <property role="TrG5h" value="saal" />
+        <node concept="BxOjD" id="6Q7cxch8PkO" role="BBx2O">
+          <ref role="BxOjI" node="1lnGlmPu69D" resolve="Saal" />
+        </node>
+      </node>
+    </node>
+    <node concept="3_Gd5r" id="6Q7cxch8PkR" role="2_wlaX">
+      <property role="3_Gd5q" value="reservierePlaetze" />
+      <property role="3_Gd5o" value="reservierePlaetze" />
+      <property role="3_Gd5t" value="reserviere Plaetzte; komplett in Service implementiert" />
+      <node concept="3_Gf45" id="6Q7cxch8Pl8" role="3_Gf4o">
+        <property role="TrG5h" value="reservierung" />
+        <node concept="BxOjD" id="6Q7cxch8Plc" role="BBx2O">
+          <ref role="BxOjI" node="1lnGlmPu62n" resolve="Resevierung" />
+        </node>
       </node>
     </node>
   </node>
