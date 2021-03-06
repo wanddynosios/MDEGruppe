@@ -722,14 +722,6 @@
     </node>
     <node concept="3_Gd56" id="3LaWsg$N68R" role="3_Gd4Z">
       <property role="TrG5h" value="BuchungsEinheit" />
-      <node concept="2_wlaR" id="3LaWsg$N69B" role="2_wlle">
-        <property role="3_FBD6" value="reihenNr" />
-        <ref role="3_FBDr" node="5H4ykBYMXjV" resolve="Integer" />
-      </node>
-      <node concept="2_wlaR" id="3LaWsg$N69D" role="2_wlle">
-        <property role="3_FBD6" value="sitzNr" />
-        <ref role="3_FBDr" node="5H4ykBYMXjV" resolve="Integer" />
-      </node>
     </node>
     <node concept="3_Gd5r" id="3LaWsg$P81R" role="2_wlaX">
       <property role="3_Gd5q" value="erhebeErwartetenUmsatz" />
@@ -779,6 +771,7 @@
       <property role="3_Gd5q" value="holeReservierung" />
       <property role="3_Gd5o" value="holeReservierung" />
       <property role="3_Gd5t" value="holt die Reservierung zum Namen" />
+      <ref role="3NuQEv" node="6EZS7jlUYVq" resolve="NoSuchElementException" />
       <node concept="3_Gf45" id="6EZS7jlUYZC" role="3_Gf4o">
         <property role="TrG5h" value="reservierungsName" />
         <node concept="BxOjD" id="6EZS7jlUYZG" role="BBx2O">
@@ -824,6 +817,50 @@
         <node concept="BxOjD" id="6Q7cxch8Plc" role="BBx2O">
           <ref role="BxOjI" node="1lnGlmPu62n" resolve="Resevierung" />
         </node>
+      </node>
+    </node>
+    <node concept="3_FBDc" id="6EZS7jlUZh4" role="3_Gd4Z">
+      <property role="TrG5h" value="vorfuehrungBuchungen" />
+      <node concept="2zC0rd" id="6EZS7jlUZik" role="3_Fx_Q">
+        <property role="2zC0rY" value="1axOPyL0tmr/Containment" />
+        <node concept="2zC6PY" id="6EZS7jlUZim" role="2zC0rK">
+          <property role="3_FBD6" value="vorfuehrung" />
+          <ref role="2zC6PZ" node="1lnGlmPu61L" resolve="Vorfuehrung" />
+        </node>
+      </node>
+      <node concept="2zC27e" id="6EZS7jlUZiq" role="3_Fx_f">
+        <property role="3_FBD6" value="buchungen" />
+        <property role="2zC27X" value="1axOPyL0vaw/Set" />
+        <ref role="3_FBDr" node="6EZS7jlUZ0T" resolve="Buchung" />
+      </node>
+    </node>
+    <node concept="3_FBDc" id="6EZS7jlUZb6" role="3_Gd4Z">
+      <property role="TrG5h" value="buchungseinheitSitze" />
+      <node concept="3_FwNw" id="6EZS7jlUZcm" role="3_Fx_Q">
+        <ref role="3_FwNB" node="3LaWsg$N68R" resolve="BuchungsEinheit" />
+      </node>
+      <node concept="2zC27e" id="6EZS7jlUZcp" role="3_Fx_f">
+        <property role="3_FBD6" value="sitz" />
+        <property role="2zC27X" value="1axOPyL0vaw/Set" />
+        <ref role="3_FBDr" node="1lnGlmPu64g" resolve="Sitz" />
+      </node>
+    </node>
+    <node concept="3_Gd56" id="6EZS7jlUZ0T" role="3_Gd4Z">
+      <property role="TrG5h" value="Buchung" />
+      <node concept="2_wlaR" id="6EZS7jlUZ1V" role="2_wlle">
+        <property role="3_FBD6" value="buchungsNummer" />
+        <ref role="3_FBDr" node="5H4ykBYMXjV" resolve="Integer" />
+      </node>
+    </node>
+    <node concept="3_FBDc" id="6EZS7jlUZ6k" role="3_Gd4Z">
+      <property role="TrG5h" value="buchungsBuchungseinheiten" />
+      <node concept="3_FwNw" id="6EZS7jlUZ7u" role="3_Fx_Q">
+        <ref role="3_FwNB" node="6EZS7jlUZ0T" resolve="Buchung" />
+      </node>
+      <node concept="2zC27e" id="6EZS7jlUZ7x" role="3_Fx_f">
+        <property role="3_FBD6" value="buchungsEinheiten" />
+        <property role="2zC27X" value="1axOPyL0vaw/Set" />
+        <ref role="3_FBDr" node="3LaWsg$N68R" resolve="BuchungsEinheit" />
       </node>
     </node>
   </node>
