@@ -775,6 +775,20 @@
         <ref role="BxOjI" node="1lnGlmPu61L" resolve="Vorfuehrung" />
       </node>
     </node>
+    <node concept="3_Gd5r" id="6EZS7jlUYZg" role="2_wlaX">
+      <property role="3_Gd5q" value="holeReservierung" />
+      <property role="3_Gd5o" value="holeReservierung" />
+      <property role="3_Gd5t" value="holt die Reservierung zum Namen" />
+      <node concept="3_Gf45" id="6EZS7jlUYZC" role="3_Gf4o">
+        <property role="TrG5h" value="reservierungsName" />
+        <node concept="BxOjD" id="6EZS7jlUYZG" role="BBx2O">
+          <ref role="BxOjI" node="5H4ykBYMXjQ" resolve="String" />
+        </node>
+      </node>
+      <node concept="BxOjD" id="6EZS7jlUYZJ" role="BBx3f">
+        <ref role="BxOjI" node="1lnGlmPu62n" resolve="Resevierung" />
+      </node>
+    </node>
     <node concept="3_Gd5r" id="6Q7cxch8Pky" role="2_wlaX">
       <property role="3_Gd5q" value="erstelleSaal" />
       <property role="3_Gd5o" value="erstelleSaal" />
